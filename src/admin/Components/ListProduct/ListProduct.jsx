@@ -1,10 +1,9 @@
 import react, { useEffect, useRef, useState } from 'react';
 import { deleteproduct, getallproduct, updateproduct } from '../../redux/slices/sliceaddproduct'
 import upload_area from '../../assets/upload_area.svg'
-import './ListProduct.css'
 import { useDispatch, useSelector } from 'react-redux'
 import cross_icon from '../../assets/cross_icon.png'
-
+import './ListProduct.css'
 import axios from 'axios';
 
 
