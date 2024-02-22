@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-//fonction  envoyer req 
+
 
 export  const add_product=createAsyncThunk("/postproduct",async(data,{rejectWithValue,dispatch})=>{
 try {
@@ -16,16 +16,7 @@ return  res.data
 })
 
 
-// export  const URI_IMage=createAsyncThunk("/upload",async(data,{rejectWithValue})=>{
-//     try {
-//         const res=await axios.post("/upload",data)
-        
-//     return  res.data.image_url
-//     } catch (error) {
-//        rejectWithValue(error.response.data.msg)
-       
-//     }
-//     })
+
 
     export const getallproduct= createAsyncThunk('/getallproduct',async(data,{rejectWithValue})=>{
         try {

@@ -3,7 +3,7 @@ import './ListProduct.css'
 import cross_icon from '../../assets/cross_icon.png'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { deleteProduct, getAllproduct, updateproduct} from '../../Redux/slices/sliceaddproduct'
+import {getallproduct ,deleteproduct,updateproduct} from '../../redux/slices/sliceproduct'
 const ListProduct = () => {
   const [allproducts, setAllproducts] = useState()
   const { ProductData } = useSelector(state => state.Product)
@@ -21,7 +21,7 @@ const ListProduct = () => {
   const New_price = useRef()
   const Old_price = useRef()
   useEffect(() => {
-    dispatch(getAllproduct())
+    dispatch(getallproduct())
   }, [])
 
   
@@ -52,8 +52,8 @@ const ListProduct = () => {
               <div className='STRING'><h1>${el.new_price}</h1></div>
               <div className='STRING'><h1>{el.category}</h1></div>
 
-              {/* <button onClick={()=>{dispatch(deleteProduct(el._id))}}>delete</button> */}
-              <div className='IMAGE'><img className='list-product.remove-icon' src={cross_icon} onClick={() => { dispatch(deleteProduct(el._id)) }}></img></div>
+              
+              <div className='IMAGE'><img className='list-product.remove-icon' src={cross_icon} onClick={() => { dispatch(deleteproduct(el._id)) }}></img></div>
 
               <div className='updateProduct'>
                 <input type='text' ref={name} onChange={() => { setName(name.current.value) }} ></input>

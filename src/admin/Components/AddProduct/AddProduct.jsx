@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import './AddProduct.css'
 import upload_area from '../../assets/upload_area.svg'
-import { add_product } from '../../Redux/slices/sliceaddproduct';
+import { add_product } from '../../redux/slices/sliceproduct';
 import axios from 'axios';
 const AddProduct = () => {
     const dispatch = useDispatch()
