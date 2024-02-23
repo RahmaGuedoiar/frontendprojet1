@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-//fonction  envoyer req 
 
 
     export const getallproduct= createAsyncThunk('/getallproduct',async(data,{rejectWithValue, })=>{

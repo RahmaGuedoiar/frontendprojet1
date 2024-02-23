@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
+//fonction  envoyer req 
 
 export  const add_product=createAsyncThunk("/postproduct",async(data,{rejectWithValue,dispatch})=>{
 try {

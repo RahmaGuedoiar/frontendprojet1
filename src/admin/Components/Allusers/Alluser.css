@@ -1,0 +1,46 @@
+.alluser-container {
+    margin: 20px;
+    margin-top: 150px;
+    background-color: rgba(244, 244, 244, 0.947);
+}
+
+.titr {
+    color: rgb(34, 65, 65);
+    text-align: center;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.user-email {
+    color: #555;
+}
+@media only screen and (max-width: 768px) {
+    .alluser-container {
+        margin-top: 100px; /* Réduit la marge supérieure pour donner plus d'espace sur les petits écrans */
+    }
+
+    .user-card {
+        padding: 8px; /* Réduit le padding des cartes utilisateur pour mieux s'adapter aux écrans plus petits */
+    }
+
+    .user-name {
+        font-size: 16px; /* Réduit la taille de la police du nom de l'utilisateur pour une meilleure lisibilité sur les petits écrans */
+    }
+    
+    .user-email {
+        font-size: 14px; /* Réduit la taille de la police de l'e-mail de l'utilisateur pour une meilleure lisibilité sur les petits écrans */
+    }
+}

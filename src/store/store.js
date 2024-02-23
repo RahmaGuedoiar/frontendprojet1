@@ -4,7 +4,7 @@ import cartUiSlice from "./shopping-cart/cartUiSlice";
 import Userslice from "./Userslice";
 import product_slice from "./Productslice";
 import orderSlice from "./orderSlice";
-import product_slice_admin from "../admin/redux/slices/sliceaddproduct"
+import  product_slice_admin from "../admin/redux/slices/sliceaddproduct"
 
 
 const store = configureStore({
@@ -14,7 +14,7 @@ const store = configureStore({
     user:Userslice, 
     product:product_slice,
     order:orderSlice,
-    productadmin:product_slice_admin
+    adminproduct: product_slice_admin
   },
 });
 

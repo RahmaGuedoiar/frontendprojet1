@@ -1,0 +1,98 @@
+
+.List-orders {
+    font-family: Arial, sans-serif;
+    margin-top: 150px;
+    width: 80vw;
+    background-color: rgba(244, 244, 244, 0.947);
+    margin-left: 130px;
+  }
+  .titr{
+    color: rgb(34, 65, 65);
+   text-align: center;
+  }
+  .List-orders h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .listorder-format-main {
+    display: flex;
+    
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+  }
+  .total{
+    margin-left: 250px;
+    color:black;
+    font-size: bold;
+    width: 20%;
+  }
+  .listorder-format{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .infoclient {
+    font-weight: bold;
+    flex-basis: 30%;
+  }
+  
+
+  .listorder-allorder {
+  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    
+  }
+  .box_client{
+   max-width:40%;
+  }
+  .box_order{
+  max-width: 40%;
+  }
+  .box_client,
+  .box_order,
+  .total {
+    flex-basis: 30%;
+   
+  }
+ 
+  .order {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 90px;
+  }
+  
+  .order img {
+    margin-right: 200px;
+    
+  }
+  
+  .hr {
+    border-top: 1px solid #232323;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .List-orders {
+        margin-top: 100px; 
+        width: 90vw; 
+        margin-left: 20px; 
+    }
+
+    .order {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .order img {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        width: 100%; 
+    }
+}
